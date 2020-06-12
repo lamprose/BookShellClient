@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="handwriting"
+            type="io.github.lamprose.bookshell.network.entity.HandwritingBean" />
+    </data>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingLeft="@dimen/dimenPaddingCommon"
+        android:paddingRight="@dimen/dimenPaddingCommon"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimenPaddingCommon"
+            android:layout_marginRight="@dimen/dimenPaddingCommon"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/handwriting_book_img"
+                android:layout_width="@dimen/dp_96"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_30"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/ic_feed_list_mail"
+                app:tint="#cccccc" />
+            <TextView
+                style="@style/AppTheme.Label"
+                android:id="@+id/handwriting_post_time"
+                android:layout_height="45dp"
+                android:layout_marginBottom="0dp"
+                android:padding="10dp"
+                android:text="@{String.valueOf(handwriting.time)}"
+                android:textColor="@android:color/tertiary_text_dark" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="@dimen/dimenPaddingDiminutive"
+            android:orientation="vertical"
+            android:padding="@dimen/dimenPaddingCommon">
+            <TextView style="@style/AppTheme.Label.Title"
+                android:id="@+id/handwriting_book_name"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/tertiary_text_dark"
+                android:text="@{handwriting.desc}"/>
+            <TextView style="@style/AppTheme.Label.Description"
+                android:id="@+id/handwriting_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimenPaddingDiminutive"
+                android:textColor="@android:color/tertiary_text_dark"
+                android:text="@{handwriting.content}"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

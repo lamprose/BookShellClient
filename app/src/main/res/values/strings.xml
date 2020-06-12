@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BookShell</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="now_loading">loading…</string>
+    <string name="bookshelf_id_format">book shelf id:%s</string>
+    <string name="bookshelf_dist_format">%.2f miles far away</string>
+    <string name="handwriting">笔迹</string>
+    <string name="post_handwriting">发布笔迹</string>
+    <string name="example_username">一醉方休</string>
+    <string name="example_signature">这个人很懒，什么也没留下…</string>
+    <string name="example_content">Lorem ipsum dolor sit amet , consecteur adipiscdfdfisdhfshfiuhfi duhadihaih udahdiuahd whdiqwh hdqwhdw hqh iqwhdihqwih  hiqwhd ing elit, sed do eiusmod tempor incidi-dunt ut labore et dlore magna aliqua. Ut enim ad minim veniam, sed do eiusmod quis nostrud exrcitation.</string>
+    <string name="logout">退出登录</string>
+    <string name="comment">评论</string>
+    <string name="lend_book">借阅</string>
+    <string name="return_book">归还</string>
+    <string name="prompt_user_name">User Name</string>
+    <string name="post_book">post book</string>
+    <string name="prompt_isbn">ISBN</string>
+    <string name="prompt_bookshelf_id">bookshelf id</string>
+</resources>

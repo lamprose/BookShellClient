@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="comment"
+            type="io.github.lamprose.bookshell.network.entity.CommentBean" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10">
+        <TextView
+            android:id="@+id/comment_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/dp_4"
+            android:maxLines="2"
+            android:textSize="@dimen/sp_14"
+            android:text="@{comment.content}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="玩安卓" />
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_13"
+            android:textSize="@dimen/sp_12"
+            android:text="@{comment.time.substring(0,16)}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@id/comment_content"
+            app:layout_constraintTop_toBottomOf="@id/comment_content"
+            tools:text="2010-10-10" />
+
+        <TextView
+            android:id="@+id/tv_project_list_atticle_auther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_30"
+            android:textSize="@dimen/sp_12"
+            android:text="@{comment.userName}"
+            app:layout_constraintStart_toEndOf="@id/comment_time"
+            app:layout_constraintTop_toTopOf="@id/comment_time"
+            tools:text="author" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
